@@ -29,8 +29,8 @@ Discover movies effortlessly with MovieFlix! Authenticated with Firebase and Goo
 <img src="screen_shots/home_tab.jpg" width="300">
 <img src="screen_shots/movie_details.jpg" width="300">
 <img src="screen_shots/search_tab.jpg" width="300">
-<img src="screen_shots/screen_shots/search_results.jpg" width="300">
-<img src="screen_shots/screen_shots/categories.jpg.jpg" width="300">
-<img src="screen_shots/screen_shots/category_screen.jpg" width="300">
-<img src="screen_shots/screen_shots/watch_list_tab.jpg" width="300">
-<img src="screen_shots/screen_shots/profile.jpg" width="300">
+<img src="screen_shots/search_results.jpg" width="300">
+<img src="screen_shots/categories.jpg.jpg" width="300">
+<img src="screen_shots/category_screen.jpg" width="300">
+<img src="screen_shots/watch_list_tab.jpg" width="300">
+<img src="screen_shots/profile.jpg" width="300">
