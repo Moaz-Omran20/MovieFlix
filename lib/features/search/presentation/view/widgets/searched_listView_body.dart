@@ -4,12 +4,11 @@ import 'package:go_router/go_router.dart';
 import 'package:movies_app/core/utils/shared.dart';
 import 'package:movies_app/features/search/presentation/view/widgets/searched_items.dart';
 import 'package:movies_app/features/search/presentation/view_model/cubits/search_cubit/search_cubit.dart';
-
 import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/utils/app_routes.dart';
 
 class SearchedListViewBody extends StatelessWidget {
-  const SearchedListViewBody({Key? key}) : super(key: key);
+  const SearchedListViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,10 +37,13 @@ class SearchedListViewBody extends StatelessWidget {
         } else if (state is SearchFailure) {
           return Text(state.errMessage);
         } else if (state is SearchInitial) {
-          return Center(
-            child: Image.asset(
-              AppImages.noResults,
-              height: 100,
+          return Padding(
+            padding: const EdgeInsets.only(top: 60),
+            child: Center(
+              child: Image.asset(
+                AppImages.noResults,
+                height: 100,
+              ),
             ),
           );
         } else {

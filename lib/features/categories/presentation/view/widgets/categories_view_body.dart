@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:movies_app/core/utils/shared.dart';
 import 'package:movies_app/features/categories/presentation/view/widgets/categories_item.dart';
 import 'package:movies_app/features/categories/presentation/view_model/cubits/get_categories_cubit/get_categories_cubit.dart';
@@ -8,7 +7,7 @@ import 'package:movies_app/features/categories/presentation/view_model/cubits/ge
 import '../../../../../core/utils/app_images.dart';
 
 class CategoriesViewBody extends StatefulWidget {
-  const CategoriesViewBody({Key? key}) : super(key: key);
+  const CategoriesViewBody({super.key});
 
   @override
   State<CategoriesViewBody> createState() => _CategoriesViewBodyState();
@@ -42,7 +41,7 @@ class _CategoriesViewBodyState extends State<CategoriesViewBody> {
             itemCount: AppImages.categoriesImages.length,
           );
         } else {
-          return LoadingIndicator();
+          return const LoadingIndicator();
         }
       },
     );

@@ -9,7 +9,7 @@ class RelatedMovies extends StatelessWidget {
   String title;
 
 
-  RelatedMovies({required this.title});
+  RelatedMovies({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class RelatedMovies extends StatelessWidget {
               )
             ],
           ),
-           Padding(
+           const Padding(
             padding: EdgeInsets.only(left: 19, top: 12),
             child: Row(
               children: [

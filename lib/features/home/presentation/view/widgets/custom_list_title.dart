@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class CustomListTitle extends StatelessWidget {
   String title;
 
-  CustomListTitle({required this.title});
+  CustomListTitle({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {

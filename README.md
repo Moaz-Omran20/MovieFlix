@@ -1,16 +1,36 @@
-# movies_app
+# MovieFlix
 
-A new Flutter project.
+Discover movies effortlessly with MovieFlix! Authenticated with Firebase and Google Sign-In, it offers a seamless experience to explore, save favorites, and enjoy a personalized cinema journey. Your go-to companion for movie enthusiasts!
 
-## Getting Started
+## Technology used:
 
-This project is a starting point for a Flutter application.
+- Navigation: go_router
+- State management: Cubit
+- Api Tmdm with dio package
+- Auth:FireBase Auth 
+- Local DataBase: Hive
 
-A few resources to get you started if this is your first Flutter project:
+## packages used:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Dio 
+- google_sign_in
+- flutter bloc
+- flutter hive
+- flutter_slidable
+- dartz
+- carousel_slider
+- cached_network_image
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ScreenShots
+
+<img src="screen_shots/splash_screen.jpg" width="300">
+<img src="screenshots/login_screen.jpg" width="300">
+<img src="screenshots/sign_up.jpg" width="300">
+<img src="screenshots/home_tab.jpg" width="300">
+<img src="screenshots/movie_details.jpg" width="300">
+<img src="screenshots/search_tab.jpg" width="300">
+<img src="screenshots/screen_shots/search_results.jpg" width="300">
+<img src="screenshots/screen_shots/categories.jpg.jpg" width="300">
+<img src="screenshots/screen_shots/category_screen.jpg" width="300">
+<img src="screenshots/screen_shots/watch_list_tab.jpg" width="300">
+<img src="screenshots/screen_shots/profile.jpg" width="300">

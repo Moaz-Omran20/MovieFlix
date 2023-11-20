@@ -1,6 +1,5 @@
 class AppImages {
-  static const String logo = "assets/images/logo.jpg";
-  static const String logo1 = "assets/images/logo1.png";
+  static const String logo1 = "assets/images/logoo.jpg";
   static const String test4 = "assets/images/test4.jpg";
   static const String bookMarkAdd = "assets/images/bookmarkadd.png";
   static const String noResults = "assets/images/no_search_results.png";
@@ -30,7 +29,7 @@ class AppImages {
 
   static const String actionImage = "assets/images/categories/action.jpg";
   static const String adventureImage = "assets/images/categories/adventure.jpg";
-  static const String animationImage = "assets/images/categories/animation.png";
+  static const String animationImage = "assets/images/categories/animation.jpg";
   static const String comedyImage = "assets/images/categories/Comedy.jpg";
   static const String crimeImage = "assets/images/categories/Crime.webp";
   static const String documentaryImage =

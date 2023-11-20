@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:movies_app/features/watch_list/presentation/view/widgets/watch_list_view_listView_body.dart';
 
 class WatchListView extends StatelessWidget {
-  const WatchListView({Key? key}) : super(key: key);
+  const WatchListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +14,8 @@ class WatchListView extends StatelessWidget {
         children: [
           Text("WatchList",
             style: GoogleFonts.rubik(fontSize: 18, fontWeight: FontWeight.bold),),
-          SizedBox(height: 15,),
-           WatchListViewListViewBody(),
+          const SizedBox(height: 15,),
+           const WatchListViewListViewBody(),
         ],
       ),
     );

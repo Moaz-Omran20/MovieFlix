@@ -8,7 +8,7 @@ import 'package:movies_app/features/categories/presentation/view_model/cubits/ge
 import '../../../../categories/presentation/view/widgets/movie_by_category_item.dart';
 
 class MoviesByCategoriesListView extends StatelessWidget {
-  const MoviesByCategoriesListView({Key? key}) : super(key: key);
+  const MoviesByCategoriesListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +19,13 @@ class MoviesByCategoriesListView extends StatelessWidget {
             return Expanded(
               child: ListView.separated(
                 separatorBuilder: (context, index) {
-                  return Divider(thickness: 2,);
+                  return const Divider(thickness: 2,);
                 },
                 itemBuilder: (context, index) {
                   return InkWell(onTap: () {
                     GoRouter.of(context).push(AppRoutes.kMovieDetailsView,extra: state.movies[index].id);
                   },child: MovieByCategoryItem(state.movies[index]));
-                }, itemCount:state.movies.length, physics: BouncingScrollPhysics(),),
+                }, itemCount:state.movies.length, physics: const BouncingScrollPhysics(),),
             );
           }
         else if(state is GetMoviesByCategoryFailure)
@@ -34,7 +34,7 @@ class MoviesByCategoriesListView extends StatelessWidget {
           }
         else
           {
-            return LoadingIndicator();
+            return const LoadingIndicator();
           }
       },
     );

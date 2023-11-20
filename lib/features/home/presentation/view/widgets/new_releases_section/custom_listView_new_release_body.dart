@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'package:movies_app/core/utils/favourite_movie_model.dart';
 import 'package:movies_app/features/home/presentation/view_model/cubits/new_releases_movies/new_releases_cubit.dart';
-import 'package:movies_app/features/watch_list/presentation/view_model/cubits/add_movie_cubit.dart';
-
 import '../../../../../../core/utils/app_routes.dart';
 import '../../../../../../core/utils/shared.dart';
 import 'new_release_item.dart';
 
 class CustomListViewNewReleaseBody extends StatelessWidget {
+  const CustomListViewNewReleaseBody({super.key});
+
 
 
   @override

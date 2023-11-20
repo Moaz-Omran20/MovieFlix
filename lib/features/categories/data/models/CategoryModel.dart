@@ -1,5 +1,6 @@
 /// id : 28
 /// name : "Action"
+library;
 
 class CategoryModel {
   CategoryModel({

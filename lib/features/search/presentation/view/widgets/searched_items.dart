@@ -5,8 +5,6 @@ import 'package:movies_app/core/utils/shared.dart';
 import 'package:movies_app/features/home/data/models/movie_model/MovieModel.dart';
 import 'package:movies_app/features/home/presentation/view/widgets/rating_item.dart';
 
-import '../../../../../core/utils/app_images.dart';
-
 class SearchedItems extends StatelessWidget {
   MovieModel searchedMovie;
 
@@ -16,14 +14,14 @@ class SearchedItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
+        SizedBox(
             height: 100,
             width: 150,
             child: CachedNetworkImage(
               imageUrl:
                   "https://image.tmdb.org/t/p/w500${searchedMovie.backdropPath}",
               fit: BoxFit.fill,
-              errorWidget: (context, url, error) => const LoadingIndicator(),
+              errorWidget: (context, url, error) =>  const ErrorImageWidget(),
               placeholder: (context, url) => const LoadingIndicator(),
             )),
         const SizedBox(

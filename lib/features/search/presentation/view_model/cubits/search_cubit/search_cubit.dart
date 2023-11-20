@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter/material.dart';
 import 'package:movies_app/features/search/data/repo/search_implementation.dart';
 
 import '../../../../../home/data/models/movie_model/MovieModel.dart';

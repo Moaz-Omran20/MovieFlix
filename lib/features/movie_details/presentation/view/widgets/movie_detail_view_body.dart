@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movies_app/features/home/data/models/movie_model/MovieModel.dart';
 import 'package:movies_app/features/movie_details/data/models/movie_detail_model/MovieDetailModel.dart';
 import 'package:movies_app/features/movie_details/presentation/view/widgets/movie_details_background.dart';
 import 'package:movies_app/features/movie_details/presentation/view/widgets/movie_details_full_details.dart';
 import 'package:movies_app/features/movie_details/presentation/view/widgets/related_movies.dart';
-
+import 'package:movies_app/features/movie_details/presentation/view/widgets/top_cast_section.dart';
 import '../../../../../constants.dart';
 
 class MovieDetailViewBody extends StatelessWidget {
 
   MovieDetailModel movieDetails;
 
-  MovieDetailViewBody(this.movieDetails);
+  MovieDetailViewBody(this.movieDetails, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,8 +43,8 @@ class MovieDetailViewBody extends StatelessWidget {
                   "Release Date: ${movieDetails.releaseDate??"Unknown"}",
                   style: GoogleFonts.rubik(fontSize: 11,color: Colors.grey),
                 ),
-                SizedBox(width: 5,),
-                Icon(Icons.date_range,size: 15,color: kPrimaryColor,),
+                const SizedBox(width: 5,),
+                const Icon(Icons.date_range,size: 15,color: kPrimaryColor,),
               ],
             ),
           ),
@@ -58,8 +56,10 @@ class MovieDetailViewBody extends StatelessWidget {
             child: MovieDetailsViewFullDetails(movieDetails),
           ),
           const SizedBox(
-            height: 18,
+            height: 15,
           ),
+          const TopCastSection(),
+          const SizedBox(height: 40,),
           RelatedMovies(title: "More Like this"),
         ],
       ),

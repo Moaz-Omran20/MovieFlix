@@ -5,12 +5,12 @@ abstract class GetCategoriesState {}
 
 class GetCategoriesInitial extends GetCategoriesState {}
 class GetCategoriesSuccess extends GetCategoriesState {
-  List<CategoryModel> categories;
+  final List<CategoryModel> categories;
 
   GetCategoriesSuccess(this.categories);
 }
 class GetCategoriesFailure extends GetCategoriesState {
-  String errMessage;
+ final String errMessage;
 
   GetCategoriesFailure(this.errMessage);
 }

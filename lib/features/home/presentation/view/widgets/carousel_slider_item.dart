@@ -1,11 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movies_app/constants.dart';
-import 'package:movies_app/core/utils/app_images.dart';
-import 'package:movies_app/core/utils/app_routes.dart';
-
 import '../../../../../core/utils/shared.dart';
 
 class CarouselSliderItem extends StatelessWidget {
@@ -31,12 +27,22 @@ class CarouselSliderItem extends StatelessWidget {
         ),
         Align(
           alignment: Alignment.bottomLeft,
-          child: Text(
-            title,
-            style: GoogleFonts.rubik(
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
-                color: Colors.white),
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height * .06,
+            decoration: BoxDecoration(
+                color: kPrimaryColor.withOpacity(0.3),
+                borderRadius: const BorderRadius.only(bottomLeft:Radius.circular(12) ,bottomRight: Radius.circular(12))),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: Text(
+                title,
+                style: GoogleFonts.rubik(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white),
+              ),
+            ),
           ),
         ),
       ]),

@@ -8,7 +8,7 @@ class CategoriesItem extends StatelessWidget {
   String categoryImage;
   CategoryModel categoryModel;
 
-  CategoriesItem({required this.categoryImage, required this.categoryModel});
+  CategoriesItem({super.key, required this.categoryImage, required this.categoryModel});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class CategoriesItem extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               image: DecorationImage(
-                  image: AssetImage(categoryImage), fit: BoxFit.fill)),
+                  image: AssetImage(categoryImage), fit: BoxFit.fill,scale: 90)),
         ),
         Center(
           child: Text(

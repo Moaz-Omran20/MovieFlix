@@ -9,7 +9,7 @@ class MovieKindItem extends StatelessWidget {
   int index;
 
 
-  MovieKindItem(this.movieDetails, this.index);
+  MovieKindItem(this.movieDetails, this.index, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class MovieKindItem extends StatelessWidget {
           border: Border.all(color: Colors.white),
           color: Colors.transparent,
         ),
-        child: Center(child: Text(movieDetails.genres![index].name!, style:TextStyle(fontSize: 12,)),
+        child: Center(child: Text(movieDetails.genres![index].name!, style:const TextStyle(fontSize: 12,)),
       ),
     ));
   }

@@ -7,7 +7,7 @@ class MovieDetailsKindsListView extends StatelessWidget {
 
   MovieDetailModel movieDetails;
 
-  MovieDetailsKindsListView(this.movieDetails);
+  MovieDetailsKindsListView(this.movieDetails, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class MovieDetailsKindsListView extends StatelessWidget {
           return MovieKindItem(movieDetails,index);
         },
         itemCount: movieDetails.genres!.length,
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
       ),
     );

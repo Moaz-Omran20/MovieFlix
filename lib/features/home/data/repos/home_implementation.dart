@@ -3,12 +3,8 @@ import 'package:dio/dio.dart';
 import 'package:movies_app/constants.dart';
 import 'package:movies_app/core/utils/api_services.dart';
 import 'package:movies_app/features/home/data/models/movie_model/MovieModel.dart';
-import 'package:movies_app/features/home/data/models/popular_model/PopularModel.dart';
 import 'package:movies_app/features/home/data/repos/home_repo.dart';
-
 import '../../../../core/failures/failures.dart';
-import '../models/new_releases_model/NewReleasesModel.dart';
-import '../models/top_rated_movies/TopRatedModel.dart';
 
 class HomeImplementation implements HomeRepo
 {

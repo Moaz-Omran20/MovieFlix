@@ -23,6 +23,7 @@
 /// video : false
 /// vote_average : 8.71
 /// vote_count : 18894
+library;
 
 class MovieDetailModel {
   MovieDetailModel({

@@ -10,7 +10,7 @@ class SingleCategoryView extends StatefulWidget {
   CategoryModel categoryModel;
 
 
-  SingleCategoryView(this.categoryModel);
+  SingleCategoryView(this.categoryModel, {super.key});
 
   @override
   State<SingleCategoryView> createState() => _SingleCategoryViewState();

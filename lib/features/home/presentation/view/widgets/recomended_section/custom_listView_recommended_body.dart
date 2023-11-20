@@ -8,7 +8,7 @@ import '../../../../../../core/utils/app_routes.dart';
 import '../../../../../../core/utils/shared.dart';
 
 class CustomListViewRecommendedBody extends StatelessWidget {
-  const CustomListViewRecommendedBody({Key? key}) : super(key: key);
+  const CustomListViewRecommendedBody({super.key});
 
   @override
   Widget build(BuildContext context) {

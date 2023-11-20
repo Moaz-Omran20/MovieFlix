@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter/material.dart';
 import 'package:movies_app/features/movie_details/data/models/movie_detail_model/MovieDetailModel.dart';
 import 'package:movies_app/features/movie_details/data/movie_detail_repo/movie_detail_repo.dart';
 

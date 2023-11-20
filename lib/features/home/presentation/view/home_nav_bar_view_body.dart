@@ -30,8 +30,8 @@ class _HomeNavBarViewState extends State<HomeNavBarView> {
       physics: const BouncingScrollPhysics(),
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 12),
+          const Padding(
+            padding: EdgeInsets.only(top: 12),
             child: CustomCarouselSLider(),
           ),
           const SizedBox(

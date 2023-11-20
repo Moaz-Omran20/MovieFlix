@@ -6,15 +6,15 @@ class MovieDetailsTitle extends StatelessWidget {
   String title;
 
 
-  MovieDetailsTitle({required this.title});
+  MovieDetailsTitle({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return  SizedBox(
         width: MediaQuery.of(context).size.width * .25,
         child:  Padding(
-          padding: EdgeInsets.only(left: 6.0),
-          child: Text(title,style: GoogleFonts.rubik(fontSize: 13),),
+          padding: const EdgeInsets.only(left: 6.0),
+          child: Text(title,style: GoogleFonts.rubik(fontSize: 12),),
         )) ;
   }
 }

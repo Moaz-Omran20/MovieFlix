@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,6 +8,8 @@ import '../../../../../core/utils/app_routes.dart';
 import '../../../../../core/utils/shared.dart';
 
 class CustomCarouselSLider extends StatelessWidget {
+  const CustomCarouselSLider({super.key});
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<PopularMoviesCubit, PopularMoviesState>(
@@ -29,7 +30,7 @@ class CustomCarouselSLider extends StatelessWidget {
             },
             options: CarouselOptions(
               autoPlay: true,
-              height: 200,
+              height: 205,
               autoPlayAnimationDuration: const Duration(seconds: 1),
             ),
           );

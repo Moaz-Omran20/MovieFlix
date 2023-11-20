@@ -7,7 +7,7 @@ import 'package:movies_app/features/movie_details/presentation/view_model/cubits
 import '../../../../../core/utils/app_routes.dart';
 
 class RelatedMoviesListView extends StatelessWidget {
-  const RelatedMoviesListView({Key? key}) : super(key: key);
+  const RelatedMoviesListView({super.key});
 
   @override
   Widget build(BuildContext context) {

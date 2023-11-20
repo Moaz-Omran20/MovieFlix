@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movies_app/constants.dart';
-import 'package:movies_app/core/utils/app_images.dart';
 import 'package:movies_app/features/search/presentation/view/widgets/searched_listView.dart';
 import 'package:movies_app/features/search/presentation/view_model/cubits/search_cubit/search_cubit.dart';
 
 class SearchViewBody extends StatelessWidget {
-  const SearchViewBody({Key? key}) : super(key: key);
+  const SearchViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {

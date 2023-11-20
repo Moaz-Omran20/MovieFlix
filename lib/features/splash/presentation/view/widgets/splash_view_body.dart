@@ -1,26 +1,23 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:movies_app/core/utils/app_images.dart';
-import 'package:movies_app/features/splash/presentation/view/widgets/sliding_text.dart';
+import 'package:movies_app/core/utils/app_routes.dart';
 
 class SplashViewBody extends StatefulWidget {
-  const SplashViewBody({Key? key}) : super(key: key);
+  bool isSignedIn = false;
+
+  SplashViewBody({super.key});
 
   @override
   State<SplashViewBody> createState() => _SplashViewBodyState();
 }
 
-class _SplashViewBodyState extends State<SplashViewBody>
-    with SingleTickerProviderStateMixin {
-  late AnimationController animationController;
-
-  late Animation<Offset> slidingAnimation;
-
+class _SplashViewBodyState extends State<SplashViewBody> {
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    initSlidingAnimation();
     navigateToHome();
   }
 
@@ -28,13 +25,12 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void dispose() {
     // TODO: implement dispose
     super.dispose();
-    animationController.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF101010),
+      backgroundColor: const Color(0xFF101010),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -49,21 +45,23 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void navigateToHome() {
     Future.delayed(
       const Duration(seconds: 2),
-          () {
-
-        GoRouter.of(context).pushReplacement('/homeView');
-        // Get.to(() => const HomeView(),
-        //     transition: Transition.fade, duration: kTransitionDuration);
+      () {
+        widget.isSignedIn = isSignedIn();
+        GoRouter.of(context).pushReplacement(
+            widget.isSignedIn ? AppRoutes.kHomeView : AppRoutes.kLoginVIew);
       },
     );
   }
 
-  void initSlidingAnimation() {
-    animationController =
-        AnimationController(vsync: this, duration: const Duration(seconds: 1));
-    slidingAnimation =
-        Tween<Offset>(begin: const Offset(0, 3), end: Offset.zero)
-            .animate(animationController);
-    animationController.forward();
+  bool isSignedIn() {
+    User? user = FirebaseAuth.instance.currentUser;
+    bool isSigned;
+    if (user != null) {
+      isSigned = true;
+      return isSigned;
+    } else {
+      isSigned = false;
+      return isSigned;
+    }
   }
 }
