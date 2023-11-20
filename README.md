@@ -24,13 +24,13 @@ Discover movies effortlessly with MovieFlix! Authenticated with Firebase and Goo
 ## ScreenShots
 
 <img src="screen_shots/splash_screen.jpg" width="300">
-<img src="screenshots/login_screen.jpg" width="300">
-<img src="screenshots/sign_up.jpg" width="300">
-<img src="screenshots/home_tab.jpg" width="300">
-<img src="screenshots/movie_details.jpg" width="300">
-<img src="screenshots/search_tab.jpg" width="300">
-<img src="screenshots/screen_shots/search_results.jpg" width="300">
-<img src="screenshots/screen_shots/categories.jpg.jpg" width="300">
-<img src="screenshots/screen_shots/category_screen.jpg" width="300">
-<img src="screenshots/screen_shots/watch_list_tab.jpg" width="300">
-<img src="screenshots/screen_shots/profile.jpg" width="300">
+<img src="screen_shots/login_screen.jpg" width="300">
+<img src="screen_shots/sign_up.jpg" width="300">
+<img src="screen_shots/home_tab.jpg" width="300">
+<img src="screen_shots/movie_details.jpg" width="300">
+<img src="screen_shots/search_tab.jpg" width="300">
+<img src="screen_shots/screen_shots/search_results.jpg" width="300">
+<img src="screen_shots/screen_shots/categories.jpg.jpg" width="300">
+<img src="screen_shots/screen_shots/category_screen.jpg" width="300">
+<img src="screen_shots/screen_shots/watch_list_tab.jpg" width="300">
+<img src="screen_shots/screen_shots/profile.jpg" width="300">
